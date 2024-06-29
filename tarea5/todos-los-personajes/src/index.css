@@ -1,0 +1,25 @@
+body {
+  margin: auto;
+  background: #2a2e41;
+  font-family: system-ui;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding: 4rem;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: space-around;
+}
+
+#root {
+  text-align: center;
+  align-items: center;
+  color: azure;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
