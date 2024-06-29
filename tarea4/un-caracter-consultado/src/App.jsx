@@ -30,7 +30,7 @@ function App() {
     <>
       <h2>Rick & Morty character search</h2>
       <Character imagen={img} nombre={name} genero={gender} estado={status}/>
-      <input type='number' onKeyDown={handleInput} placeholder='Type a number'/>
+      <input type='number' onKeyDown={handleInput} placeholder='from 1 to 20'/>
     </>
   )
 }
