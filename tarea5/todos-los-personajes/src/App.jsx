@@ -5,14 +5,9 @@ import './estilosTarjeta.css'
 function App() {
   const [rmApi, setRmApi] = useState('');
   const [offset, setOffset] = useState(1);
+  
   const [btnNext, setBtnNext] = useState('');
   const [btnPrev, setBtnPrev] = useState('');
-
-  // useEffect(() => {
-  //   if (offset == 1 || offset == 42 ) {
-  //     setBtn('disabledBtn')
-  //   } 
-  // }, [offset])
 
   useEffect(() => {
     fetch(`https://rickandmortyapi.com/api/character?page=${offset}`)
