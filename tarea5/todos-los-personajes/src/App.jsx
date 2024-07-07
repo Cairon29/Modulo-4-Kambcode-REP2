@@ -34,7 +34,7 @@ const nextPage = () => {
 }
   return (
     <>
-      <h1>Rick & Morty character library</h1>
+      <h1>Rick & Morty character API library</h1>
       <div className='content'>
         {rmApi && rmApi.results.map((element) => (
           <Character key={element.id} imagen={element.image} nombre={element.name} genero={element.gender} estado={element.status}/>
