@@ -7,11 +7,11 @@ export const Location = (props) => {
             </section>
             <section className="rating">
                 <div className="datos">
-                    <h3 className="autor">Gender</h3>
+                    <h3 className="autor">Type</h3>
                     <h2 className='subtitle'>{props.tipo}</h2>
                 </div>
                 <div className="datos">
-                    <h3 className="autor">Status</h3>
+                    <h3 className="autor">Dimension</h3>
                     <h2 className='subtitle'>{props.dimension}</h2>
                 </div>
             </section>

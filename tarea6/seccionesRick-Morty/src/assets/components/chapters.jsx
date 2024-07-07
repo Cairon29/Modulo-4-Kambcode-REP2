@@ -7,11 +7,11 @@ export const Chapter = (props) => {
             </section>
             <section className="rating">
                 <div className="datos">
-                    <h3 className="autor">Gender</h3>
+                    <h3 className="autor">Chapter</h3>
                     <h2 className='subtitle'>{props.numEpisodio}</h2>
                 </div>
                 <div className="datos">
-                    <h3 className="autor">Status</h3>
+                    <h3 className="autor">Release</h3>
                     <h2 className='subtitle'>{props.estreno}</h2>
                 </div>
             </section>
