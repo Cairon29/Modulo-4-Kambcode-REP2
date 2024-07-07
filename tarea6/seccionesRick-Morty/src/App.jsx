@@ -6,11 +6,13 @@ import { ChapterHandling } from './assets/chapterHandling'
 import { LocationHandling } from './assets/locationHandling'
 import { NotFound } from './assets/notFound'
 import './estilosTarjeta.css'
+import imagen from './assets/Rick-and-Morty-Logo-Vector.png'
 
 
 function App() {
   return (
     <>
+      <img src={imagen} alt="rick and morty logo" className='rYmLogo' />
       <Router>
           <nav>
           <ul>
