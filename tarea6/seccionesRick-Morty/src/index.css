@@ -24,7 +24,7 @@ body {
   row-gap: 3rem;
 }
 
-nav {
+.seccionesPagina {
   display: flex;
   justify-content: space-evenly;
   align-items: center;

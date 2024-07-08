@@ -16,8 +16,8 @@ export const CharacterHandling = () => {
     offset == 1? setBtnPrev('disabledBtn') : setBtnPrev('')
     offset == 42? setBtnNext('disabledBtn') : setBtnNext('')
   }, [offset]);
-
-const previousPage = () => {
+  
+  const previousPage = () => {
   window.scrollTo({
     top: 0,
     behavior: 'instant'

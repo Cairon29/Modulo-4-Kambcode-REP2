@@ -12,22 +12,27 @@ import imagen from './assets/Rick-and-Morty-Logo-Vector.png'
 function App() {
   return (
     <>
-      <img src={imagen} alt="rick and morty logo" className='rYmLogo' />
       <Router>
-          <nav>
+            <nav>
+              
+            <Link style={{ textDecoration: 'none' }} to='/home'>
+                <img src={imagen} alt="rick and morty logo" className='rYmLogo' />
+              </Link>
+            </nav>
+          <nav className='seccionesPagina'>
           <ul>
-              <Link style={{ textDecoration: 'none' }} to='/assets/components/home'><li> Home </li></Link>
-              <Link style={{ textDecoration: 'none' }} to='/assets/characterHandling'><li> Characters </li></Link >
-              <Link style={{ textDecoration: 'none' }} to='/assets/chapterHandling'><li> Chapters </li></Link>
-              <Link style={{ textDecoration: 'none' }} to='/assets/locationHandling'><li> Locations </li></Link> 
-          </ul>
+              <Link style={{ textDecoration: 'none' }} to='/home'><li> Home </li></Link>
+              <Link style={{ textDecoration: 'none' }} to='/characters'><li> Characters </li></Link>
+              <Link style={{ textDecoration: 'none' }} to='/chapters'><li> Chapters </li></Link>
+              <Link style={{ textDecoration: 'none' }} to='/locations'><li> Locations </li></Link> 
+          </ul> 
           </nav>
           <Routes>
-              <Route path= '/assets/components/home' element={<Home/>} />
-              <Route path= '/assets/characterHandling' element={<CharacterHandling/>} />
-              <Route path= '/assets/chapterHandling' element={<ChapterHandling/>} />
-              <Route path= '/assets/locationHandling' element={<LocationHandling/>} />
-              <Route path='*' element={<NotFound/>} />
+              <Route path= '/home' element={<Home/>} />
+              <Route path= '/characters' element={<CharacterHandling/>} />
+              <Route path= '/chapters' element={<ChapterHandling/>} />
+              <Route path= '/locations' element={<LocationHandling/>} />
+              <Route path= '*' element={<NotFound/>} />
           </Routes>
       </Router>
     </> 
