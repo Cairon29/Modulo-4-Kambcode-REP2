@@ -33,7 +33,35 @@ const nextPage = () => {
 }
   return (
     <>
-      <h1>Rick & Morty character API library</h1>
+      <div className="filterCategory">
+        <label for="name">Name</label>
+        <input id="name" type="text" placeholder='ej: Morty'/>
+      </div>
+      <div className="filterCategory">
+        <form>
+              <input type="radio" id="alive" name="fav_language" value="alive"/>
+              <label for="alive">Alive</label>
+              <input type="radio" id="dead" name="fav_language" value="dead"/>
+              <label for="dead">Dead</label>
+        </form>
+      </div>
+      <div className="filterCategory">
+        <form>
+              <input type="radio" id="alive" name="fav_language" value="alive"/>
+              <label for="alive">Alive</label>
+              <input type="radio" id="dead" name="fav_language" value="dead"/>
+              <label for="dead">Dead</label>
+        </form>
+      </div>
+      <div className="filterCategory">
+        <form>
+              <input type="radio" id="alive" name="fav_language" value="alive"/>
+              <label for="alive">Alive</label>
+              <input type="radio" id="dead" name="fav_language" value="dead"/>
+              <label for="dead">Dead</label>
+        </form>
+      </div>
+
       <div className='content'>
         {rmApi && rmApi.results.map((element) => (
           <Character key={element.id} imagen={element.image} nombre={element.name} genero={element.gender} estado={element.status}/>

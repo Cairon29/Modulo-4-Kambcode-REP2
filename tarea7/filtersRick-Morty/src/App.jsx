@@ -13,12 +13,11 @@ function App() {
   return (
     <>
       <Router>
-            <nav>
-              
+          <nav>
             <Link style={{ textDecoration: 'none' }} to='/home'>
-                <img src={imagen} alt="rick and morty logo" className='rYmLogo' />
-              </Link>
-            </nav>
+              <img src={imagen} alt="rick and morty logo" className='rYmLogo' />
+            </Link>
+          </nav>
           <nav className='seccionesPagina'>
           <ul>
               <Link style={{ textDecoration: 'none' }} to='/home'><li> Home </li></Link>
